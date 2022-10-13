@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>法律事務所</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="icon" href="" />
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- フォント -->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'hbc5esk',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+<body>
+  <header class="c-header">
+    <div class="c-header__inner">
+      <div class="c-header__wrapper">
+        <h1 class="c-header__title">
+          <a href="#" class="c-header__logo">
+            弁護士 ○○○○<span>〇〇共同法律事務所</span>
+          </a><!-- /.header__logo -->
+        </h1><!-- /.header__title -->
+        <!--ナビゲーション-->
+        <nav class="c-header__nav">
+          <ul class="c-header__lists">
+            <li class="c-header__list"><a class="c-header__link" href="#">ホーム</a></li>
+            <li class="c-header__list"><a class="c-header__link" href="#">取扱分野</a></li>
+            <li class="c-header__list"><a class="c-header__link" href="#">弁護士紹介</a></li>
+            <li class="c-header__list"><a class="c-header__link" href="#">弁護士費用</a></li>
+            <li class="c-header__list"><a class="c-header__link" href="#">事務所のご案内</a></li>
+            <li class="c-header__list"><a class="c-header__link" href="#">お知らせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="c-header__contact">
+        <div class="c-header__tel">
+          <a href="tel:01-2345-6789">01-2345-6789</a>
+          <span>受付時間 10:00〜20:00 土日祝休み</span>
+        </div>
+        <div class="c-header__contact-btn">
+          <a href="#">お問い合わせ</a>
+        </div>
+      </div>
+      <!--hamburgerボタンー-->
+      <div class="c-header__btn js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--hamburgerメニュー-->
+      <nav class="c-header__spnav js-hamburger-nav">
+        <ul class="c-header__splists">
+          <li class="c-header__splist">
+            <a class="c-header__splink js-link" href="#">ホーム</a>
+          </li>
+          <li class="c-header__splist">
+            <a class="c-header__splink js-link" href="#">取扱分野</a>
+          </li>
+          <li class="c-header__splist">
+            <a class="c-header__splink js-link" href="#">弁護士紹介</a>
+          </li>
+          <li class="c-header__splist">
+            <a class="c-header__splink js-link" href="#">弁護士費用</a>
+          </li>
+          <li class="c-header__splist">
+            <a class="c-header__splink js-link" href="#">事務所のご案内</a>
+          </li>
+          <li class="c-header__splist">
+            <a class="c-header__splink js-link" href="#">お知らせ</a>
+          </li>
+        </ul>
+        <div class="c-header__spcontact">
+          <div class="c-header__tel">
+            <a href="tel:01-2345-6789">01-2345-6789</a>
+            <span>受付時間 10:00〜20:00 土日祝休み</span>
+          </div>
+          <div class="c-header__contact-btn c-header__contact-btn--sp">
+            <a href="#">お問い合わせ</a>
+          </div>
+        </div>
+
+      </nav>
+      <!--//ここまでナビゲーション-->
+    </div><!-- /.header__inner -->
+  </header>
+  <div class="l-inner">
+    <h2 class="c-section-title">
+      主な取り扱い分野
+    </h2>
+
+    <a href="#" class="c-btn">主な取り扱い分野を詳しく見る</a>
+
+    <a href="#" class="c-btn-arrow">詳しくはこちら</a>
+  </div>
+</body>
+</html>

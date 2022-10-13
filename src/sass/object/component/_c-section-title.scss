@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.c-section-title {
+  display: inline-block;
+  font-family: $font-bold;
+  font-size: rem(27);
+  line-height: calc(54 / 27);
+  border-bottom: 2px solid $orange;
+}
