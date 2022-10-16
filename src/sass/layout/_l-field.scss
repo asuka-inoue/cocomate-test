@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.l-field {
+  padding-top: rem(60);
+  padding-bottom: rem(79);
+  @include mq(md) {
+    padding-top: rem(119);
+    padding-bottom: rem(79);
+  }
+}

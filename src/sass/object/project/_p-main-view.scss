@@ -1,0 +1,89 @@
+@use "global" as *;
+
+.p-main-view {
+  position: relative;
+  background-color: #C6DCDA;
+  margin-top: rem(76);
+  @include mq(md) {
+    margin-top: rem(106);
+  }
+}
+
+.p-main-view__wrapper {
+  @include mq(md) {
+    position: absolute;
+    top: 35.333333%;
+    left: rem(50);
+  }
+}
+
+.p-main-view__title {
+  position: absolute;
+  top: 20%;
+  left: rem(15);
+  max-width: rem(305);
+  width: 100%;
+  z-index: 2;
+  @include mq(md) {
+    position: unset;
+    max-width: rem(551);
+  }
+}
+
+.p-main-view__title span {
+  background: $white;
+  display: inline-block;
+  font-family: $font-bold;
+  font-size: rem(20);
+  line-height: calc(48 / 38);
+  padding: rem(6) rem(13);
+  @include mq(md) {
+    font-size: rem(38);
+  }
+}
+
+.p-main-view__title span + span {
+  margin-top: rem(16);
+}
+
+.p-main-view__text {
+  width: 100%;
+  padding: rem(20) $padding-sp;
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+  max-width: rem(450);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md) {
+    max-width: rem(317);
+    margin-top: rem(13);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+}
+
+.p-main-view__img {
+  margin-left: auto;
+  position: relative;
+  width: 80%;
+  @include mq(md) {
+    width: 67.968%;
+  }
+}
+
+.p-main-view__img::before {
+  content: "";
+  display: block;
+  padding-top: 68.4150513%;
+}
+
+.p-main-view__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
