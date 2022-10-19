@@ -18,3 +18,18 @@
   color: #ED6417;
   opacity: 1;
 }
+
+.c-btn--green {
+  background: $green;
+  min-width: rem(164);
+  border: 2px solid $green;
+  font-size: rem(14);
+  font-family: $font-sub;
+  padding: rem(8) rem(46);
+}
+
+.c-btn--green:hover {
+  background: $white;
+  color: $green;
+  opacity: 1;
+}

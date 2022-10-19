@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.l-flow {
+.l-news {
   padding-top: rem(40);
   padding-bottom: rem(60);
   @include mq(md) {
-    padding-top: rem(99);
-    padding-bottom: rem(100);
+    padding-top: rem(72);
+    padding-bottom: rem(74);
   }
 }
