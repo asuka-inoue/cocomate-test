@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.p-footer {
+  background: $green;
+  color: $white;
+}
+
+.p-footer__title {
+  font-family: $font-bold;
+  font-size: rem(24);
+  text-align: center;
+}
+
+.p-footer__title span {
+  font-family: $font-sub;
+  font-size: rem(16);
+}
+
+.p-footer__nav {
+  width: 100%;
+  margin: auto;
+  @include mq(md) {
+    display: flex;
+    max-width: rem(496);
+
+  }
+}
