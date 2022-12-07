@@ -19,10 +19,6 @@
   <meta property="og:description" content="" />
   <!-- ファビコン -->
   <link rel="icon" href="data:," />
-  <!-- フォント -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
   <!-- フォント -->
@@ -41,69 +37,69 @@
   <script defer src="./js/script.js"></script>
 </head>
 <body>
-  <header class="c-header">
-    <div class="c-header__inner">
-      <div class="c-header__wrapper">
-        <h1 class="c-header__title">
-          <a href="#" class="c-header__logo">
+  <header class="p-header">
+    <div class="p-header__inner">
+      <div class="p-header__wrapper">
+        <h1 class="p-header__title">
+          <a href="#" class="p-header__logo">
             弁護士 ○○○○<span>〇〇共同法律事務所</span>
           </a><!-- /.header__logo -->
         </h1><!-- /.header__title -->
         <!--ナビゲーション-->
-        <nav class="c-header__nav">
-          <ul class="c-header__lists">
-            <li class="c-header__list"><a class="c-header__link" href="#">ホーム</a></li>
-            <li class="c-header__list"><a class="c-header__link" href="#">取扱分野</a></li>
-            <li class="c-header__list"><a class="c-header__link" href="#">弁護士紹介</a></li>
-            <li class="c-header__list"><a class="c-header__link" href="#">弁護士費用</a></li>
-            <li class="c-header__list"><a class="c-header__link" href="#">事務所のご案内</a></li>
-            <li class="c-header__list"><a class="c-header__link" href="#">お知らせ</a></li>
+        <nav class="p-header__nav">
+          <ul class="p-header__lists">
+            <li class="p-header__list"><a class="p-header__link" href="#">ホーム</a></li>
+            <li class="p-header__list"><a class="p-header__link" href="./service/index.html">取扱分野</a></li>
+            <li class="p-header__list"><a class="p-header__link" href="#">弁護士紹介</a></li>
+            <li class="p-header__list"><a class="p-header__link" href="#">弁護士費用</a></li>
+            <li class="p-header__list"><a class="p-header__link" href="#address">事務所のご案内</a></li>
+            <li class="p-header__list"><a class="p-header__link" href="#">お知らせ</a></li>
           </ul>
         </nav>
       </div>
-      <div class="c-header__contact">
-        <div class="c-header__tel">
+      <div class="p-header__contact">
+        <div class="p-header__tel">
           <a href="tel:01-2345-6789">01-2345-6789</a>
           <span>受付時間 10:00〜20:00 土日祝休み</span>
         </div>
-        <div class="c-header__contact-btn">
+        <div class="p-header__contact-btn">
           <a href="#">お問い合わせ</a>
         </div>
       </div>
       <!--hamburgerボタンー-->
-      <div class="c-header__btn js-hamburger">
+      <div class="p-header__btn js-hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
       <!--hamburgerメニュー-->
-      <nav class="c-header__spnav js-hamburger-nav">
-        <ul class="c-header__splists">
-          <li class="c-header__splist">
-            <a class="c-header__splink js-link" href="#">ホーム</a>
+      <nav class="p-header__spnav js-hamburger-nav">
+        <ul class="p-header__splists">
+          <li class="p-header__splist">
+            <a class="p-header__splink js-link" href="#">ホーム</a>
           </li>
-          <li class="c-header__splist">
-            <a class="c-header__splink js-link" href="#">取扱分野</a>
+          <li class="p-header__splist">
+            <a class="p-header__splink js-link" href="./service/index.html">取扱分野</a>
           </li>
-          <li class="c-header__splist">
-            <a class="c-header__splink js-link" href="#">弁護士紹介</a>
+          <li class="p-header__splist">
+            <a class="p-header__splink js-link" href="#">弁護士紹介</a>
           </li>
-          <li class="c-header__splist">
-            <a class="c-header__splink js-link" href="#">弁護士費用</a>
+          <li class="p-header__splist">
+            <a class="p-header__splink js-link" href="#">弁護士費用</a>
           </li>
-          <li class="c-header__splist">
-            <a class="c-header__splink js-link" href="#">事務所のご案内</a>
+          <li class="p-header__splist">
+            <a class="p-header__splink js-link" href="#address">事務所のご案内</a>
           </li>
-          <li class="c-header__splist">
-            <a class="c-header__splink js-link" href="#">お知らせ</a>
+          <li class="p-header__splist">
+            <a class="p-header__splink js-link" href="#">お知らせ</a>
           </li>
         </ul>
-        <div class="c-header__spcontact">
-          <div class="c-header__tel">
+        <div class="p-header__spcontact">
+          <div class="p-header__tel">
             <a href="tel:01-2345-6789">01-2345-6789</a>
             <span>受付時間 10:00〜20:00 土日祝休み</span>
           </div>
-          <div class="c-header__contact-btn c-header__contact-btn--sp">
+          <div class="p-header__contact-btn p-header__contact-btn--sp">
             <a href="#">お問い合わせ</a>
           </div>
         </div>
@@ -111,10 +107,11 @@
       <!--//ここまでナビゲーション-->
     </div><!-- /.header__inner -->
   </header>
-  <div class="p-main-view">
+  <div class="l-main-view p-main-view">
     <figure class="p-main-view__img">
-      <img src="./images/mv-img.jpg" alt="">
+      <img src="./images/mv-img.jpg" alt="気楽に相談できる仲間のようなパートナーとして">
     </figure>
+    <!-- <div class="p-main-view__img"></div> -->
     <div class="p-main-view__wrapper">
       <h2 class="p-main-view__title">
         <span>気楽に相談できる</span>
@@ -126,43 +123,43 @@
     </div>
   </div>
   <section class="l-features p-features">
-    <div class="p-features__title-box">
-      <h2 class="p-features__title-box__title">お客様を笑顔にする3つの特徴</h2>
-      <p class="p-features__title-box__text">
+    <div class="p-features__title p-features-titlebox">
+      <h2 class="p-features-titlebox__title">お客様を笑顔にする3つの特徴</h2>
+      <p class="p-features-titlebox__text">
         一度お付き合いしていただいだお客様とは、<br class="u-mobile">ずっと信頼関係が続いていく。<br>
         そんな法律事務所がわたしの特徴です。<br class="u-mobile">いつまでも感謝の気持ちを忘れないようにして<br>
         すべてのお客様を笑顔にしていきたいと思っています。
       </p>
-      <figure class="p-features__title-box__img">
-        <img src="./images/bg-features.png" alt="">
+      <figure class="p-features-titlebox__img">
+        <img src="./images/bg-features.png" alt="背景画像">
       </figure>
     </div>
     <div class="p-features__contents">
-      <div class="l-inner">
-        <div class="p-features__contents__items">
-          <div class="p-features__contents__item">
-            <div class="p-features__contents__item-num"><span>point</span>01</div>
-            <figure class="p-features__contents__img">
+      <div class="l-features__inner">
+        <div class="p-features__content p-features-cards">
+          <div class="p-features-cards__item c-features-card">
+            <div class="c-features-card__num"><span>point</span>01</div>
+            <figure class="c-features-card__img">
               <img src="./images/point-01.png" alt="相談しやすい環境">
             </figure>
-            <h3 class="p-features__contents__title">相談しやすい環境</h3>
-            <p class="p-features__contents__text">アットホームにお待ちしています。どのようなことでもかまいません。どんなことでもご相談ください。</p>
+            <h3 class="c-features-card__title">相談しやすい環境</h3>
+            <p class="c-features-card__text">アットホームにお待ちしています。どのようなことでもかまいません。どんなことでもご相談ください。</p>
           </div>
-          <div class="p-features__contents__item">
-            <div class="p-features__contents__item-num"><span>point</span>02</div>
-            <figure class="p-features__contents__img">
+          <div class="p-features-cards__item c-features-card">
+            <div class="c-features-card__num"><span>point</span>02</div>
+            <figure class="c-features-card__img">
               <img src="./images/point-02.png" alt="個人から法人まで">
             </figure>
-            <h3 class="p-features__contents__title">個人から法人まで</h3>
-            <p class="p-features__contents__text">商店街の個人事業主様から上場企業様まで、お客様は多岐にわたります。業種や規模が違うお客様のご要望にお答えします</p>
+            <h3 class="c-features-card__title">個人から法人まで</h3>
+            <p class="c-features-card__text">商店街の個人事業主様から上場企業様まで、お客様は多岐にわたります。業種や規模が違うお客様のご要望にお答えします</p>
           </div>
-          <div class="p-features__contents__item">
-            <div class="p-features__contents__item-num"><span>point</span>03</div>
-            <figure class="p-features__contents__img">
+          <div class="p-features-cards__item c-features-card">
+            <div class="c-features-card__num"><span>point</span>03</div>
+            <figure class="c-features-card__img">
               <img src="./images/point-03.png" alt="ひとりひとりのお悩みにぴったり寄り添いサポートします。">
             </figure>
-            <h3 class="p-features__contents__title">ひとりひとりのお悩みに<br>ぴったり寄り添いサポートします。</h3>
-            <p class="p-features__contents__text">相談者と一緒に悩み、一緒に考える。相談者にぴったり寄り添い、細やかにサポートします。</p>
+            <h3 class="c-features-card__title">ひとりひとりのお悩みに<br>ぴったり寄り添いサポートします。</h3>
+            <p class="c-features-card__text">相談者と一緒に悩み、一緒に考える。相談者にぴったり寄り添い、細やかにサポートします。</p>
           </div>
         </div>
       </div>
@@ -186,45 +183,45 @@
           </div>
         </div>
         <div class="p-field__items">
-          <div class="p-field__item">
-            <figure class="p-field__item-img">
+          <div class="p-field__item c-field-item">
+            <figure class="c-field-item__img">
               <img src="./images/field-01.png" alt="交通事故">
             </figure>
-            <div class="p-field__item-textblock">
-              <h3 class="p-field__item-title">交通事故</h3>
-              <p class="p-field__item-text">
+            <div class="c-field-item__textblock">
+              <h3 class="c-field-item__title">交通事故</h3>
+              <p class="c-field-item__text">
                 不幸にも被害に遭われてしまった場合、現在の生活やその後の生活に支障が生じてしまいます。その被害を回復するためには、適切な賠償金を受け取らなければなりません。保険会社は、当初から適切な賠償金額の提示をするケースは多くはありません。
               </p>
             </div>
-            <div class="p-field__item-btn">
+            <div class="c-field-item__btn">
               <a href="#" class="c-btn-arrow">詳しくはこちら</a>
             </div>
           </div>
-          <div class="p-field__item">
-            <figure class="p-field__item-img">
+          <div class="p-field__item c-field-item">
+            <figure class="c-field-item__img">
               <img src="./images/field-02.png" alt="離婚・男女問題">
             </figure>
-            <div class="p-field__item-textblock">
-              <h3 class="p-field__item-title">離婚・男女問題</h3>
-              <p class="p-field__item-text">
+            <div class="c-field-item__textblock">
+              <h3 class="c-field-item__title">離婚・男女問題</h3>
+              <p class="c-field-item__text">
                 限られた人生の中で、離婚するべきか否か、時間が解決してくれることはあまり期待できません。離婚に際して取り決めるべきことは多岐にわたります。大切な問題であるからこそ、専門家に一度ご相談することをおすすめします。
               </p>
             </div>
-            <div class="p-field__item-btn">
+            <div class="c-field-item__btn">
               <a href="#" class="c-btn-arrow">詳しくはこちら</a>
             </div>
           </div>
-          <div class="p-field__item">
-            <figure class="p-field__item-img">
+          <div class="p-field__item c-field-item">
+            <figure class="c-field-item__img">
               <img src="./images/field-03.png" alt="遺産相続・遺言書">
             </figure>
-            <div class="p-field__item-textblock">
-              <h3 class="p-field__item-title">遺産相続・遺言書</h3>
-              <p class="p-field__item-text">
+            <div class="c-field-item__textblock">
+              <h3 class="c-field-item__title">遺産相続・遺言書</h3>
+              <p class="c-field-item__text">
                 「自分の家族は大丈夫」そう思って、きちんとした遺言書を残さなかったからこそ残された家族の間で争いは起きています。大切な財産を巡って大切な家族がバラバラになってしまうことを避けるために、専門家による遺言書を作成しましょう。
               </p>
             </div>
-            <div class="p-field__item-btn">
+            <div class="c-field-item__btn">
               <a href="#" class="c-btn-arrow">詳しくはこちら</a>
             </div>
           </div>
@@ -277,87 +274,86 @@
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </section>
 
   <section class="l-flow p-flow">
-    <div class="l-inner">
+    <div class="l-flow__inner">
       <div class="p-flow__title">
         <h2 class="c-section-title c-section-title--green">
           ご依頼の流れ
         </h2>
       </div>
       <div class="p-flow__wrapper">
-        <div class="p-flow__item">
-          <p class="p-flow__item-num">
+        <div class="p-flow__item c-flow-item">
+          <p class="c-flow-item__num">
             01
           </p>
-          <figure class="p-flow__item-img">
+          <figure class="c-flow-item__img">
             <img src="./images/flow-01.png" alt="ご相談・予約">
           </figure>
-          <h3 class="p-flow__item-title">
+          <h3 class="c-flow-item__title">
             ご相談・予約
           </h3>
-          <p class="p-flow__item-text">
+          <p class="c-flow-item__text">
             まずはお気軽にご連絡ください。ご相談の概要をお聞きした上で、ご相談日を決めさせていただきます。
           </p>
         </div>
-        <div class="p-flow__item">
-          <p class="p-flow__item-num">
+        <div class="p-flow__item c-flow-item">
+          <p class="c-flow-item__num">
             02
           </p>
-          <figure class="p-flow__item-img">
+          <figure class="c-flow-item__img">
             <img src="./images/flow-02.png" alt="ご面談">
           </figure>
-          <h3 class="p-flow__item-title">
+          <h3 class="c-flow-item__title">
             ご面談
           </h3>
-          <p class="p-flow__item-text">
+          <p class="c-flow-item__text">
             トラブルの状況や経緯について、詳しくお聞かせください。当事務所でご相談をお受けさせていただきます。
           </p>
         </div>
-        <div class="p-flow__item">
-          <p class="p-flow__item-num">
+        <div class="p-flow__item c-flow-item">
+          <p class="c-flow-item__num">
             03
           </p>
-          <figure class="p-flow__item-img">
+          <figure class="c-flow-item__img">
             <img src="./images/flow-03.png" alt="ご検討">
           </figure>
-          <h3 class="p-flow__item-title">
+          <h3 class="c-flow-item__title">
             ご検討
           </h3>
-          <p class="p-flow__item-text">
+          <p class="c-flow-item__text">
             ご相談の結果、弁護士の関与が必要と判断した場合には、処理の方針や費用などのご説明をさせていただきます。
           </p>
         </div>
-        <div class="p-flow__item">
-          <p class="p-flow__item-num">
+        <div class="p-flow__item c-flow-item">
+          <p class="c-flow-item__num">
             04
           </p>
-          <figure class="p-flow__item-img">
+          <figure class="c-flow-item__img">
             <img src="./images/flow-04.png" alt="ご依頼">
           </figure>
-          <h3 class="p-flow__item-title">
+          <h3 class="c-flow-item__title">
             ご依頼
           </h3>
-          <p class="p-flow__item-text">
+          <p class="c-flow-item__text">
             提案にご納得いただけましたら、ご契約後、問題解決へと進めていきます。
           </p>
         </div>
-        <div class="p-flow__item">
-          <p class="p-flow__item-num">
+        <div class="p-flow__item c-flow-item">
+          <p class="c-flow-item__num">
             05
           </p>
-          <figure class="p-flow__item-img">
+          <figure class="c-flow-item__img">
             <img src="./images/flow-05.png" alt="解決">
           </figure>
-          <h3 class="p-flow__item-title">
+          <h3 class="c-flow-item__title">
             解決
           </h3>
-          <p class="p-flow__item-text">
+          <p class="c-flow-item__text">
             アンケートの実施、定期的な事務所ご案内を通して、事案終了後にも日々の安心をお届けいたします。
           </p>
         </div>
@@ -366,7 +362,7 @@
   </section>
 
   <section class="l-profile p-profile">
-    <div class="l-inner">
+    <div class="l-profile__inner">
       <div class="p-profile__wrapper">
         <figure class="p-profile__img">
           <img src="./images/profile-img.jpg" alt="弁護士 〇〇〇〇">
@@ -384,10 +380,11 @@
         </div>
       </div>
     </div>
+    
   </section>
 
   <section class="l-news p-news">
-    <div class="l-inner">
+    <div class="l-news__inner">
       <div class="p-news__wrapper">
         <div class="p-news__title">
           <h2 class="c-section-title c-section-title--mid">
@@ -395,21 +392,21 @@
           </h2>
         </div>
         <div class="p-news__items">
-          <div class="p-news__item">
-            <time class="p-news__date" datetime="2022-02-12">2022.02.12</time>
-            <h3 class="p-news__item-title">
+          <div class="p-news__item c-news">
+            <time class="c-news__date" datetime="2022-02-12">2022.02.12</time>
+            <h3 class="c-news__title">
               <a href="#">事務所を移転しました。</a>
             </h3>
           </div>
-          <div class="p-news__item">
-            <time class="p-news__date" datetime="2022-02-01">2022.02.01</time>
-            <h3 class="p-news__item-title">
+          <div class="p-news__item c-news">
+            <time class="c-news__date" datetime="2022-02-01">2022.02.01</time>
+            <h3 class="c-news__title">
               <a href="#">当事務所がココナラ法律相談のインタビューを受けました。</a>
             </h3>
           </div>
-          <div class="p-news__item">
-            <time class="p-news__date" datetime="2022-02-01">2022.02.01</time>
-            <h3 class="p-news__item-title">
+          <div class="p-news__item c-news">
+            <time class="c-news__date" datetime="2022-02-01">2022.02.01</time>
+            <h3 class="c-news__title">
               <a href="#">事務所の公式ウェブサイトを公開いたしました。</a>
             </h3>
           </div>
@@ -423,14 +420,15 @@
 
   <!-- コンタクトエリア -->
   <div class="c-contact-area">
-    <div class="l-inner">
+    <div class="c-contact-area__inner">
       <div class="c-contact-area__title-wrap">
         <h2 class="c-contact-area__title">初回60分のご相談は無料です。<br>まずはお気軽にご相談ください！</h2>
+        <figure class="c-contact-area__img">
+          <img src="./images/contact-area-img.png" alt="まずはお気軽にご相談ください！
+          ">
+        </figure>
       </div>
       <div class="c-contact-area__wrapper">
-        <figure class="c-contact-area__img">
-          <img src="./images/contact-area-img.png" alt="">
-        </figure>
         <a href="tel:01-2345-6789" class="c-contact-area__btn c-contact-area__btn--tel">
           受付時間  10:00〜20:00 土日祝休み
           <span>01-2345-6789</span>
@@ -443,8 +441,8 @@
     </div>
   </div>
 
-  <section class="l-address p-address">
-    <div class="l-inner">
+  <section class="l-address p-address" id="address">
+    <div class="l-address__inner">
       <div class="p-address__wrapper">
         <div class="p-address__text-block">
           <h2 class="c-section-title">
@@ -470,24 +468,26 @@
   <footer class="l-footer p-footer">
     <div class="l-inner">
       <div class="p-footer__title">
-        <span>〇〇共同法律事務所</span>
+        <a href="#">
+          <span>〇〇共同法律事務所</span>
         弁護士 〇〇〇〇
+        </a>
       </div>
       <ul class="p-footer__nav">
         <li class="p-footer__nav-list">
-          よくある質問
+          <a href="">よくある質問</a>
         </li>
         <li class="p-footer__nav-list">
-          お客様の声
+          <a href="">お客様の声</a>
         </li>
         <li class="p-footer__nav-list">
-          お問い合わせ
+          <a href="">お問い合わせ</a>
         </li>
         <li class="p-footer__nav-list">
-          プライバシーポリシー
+          <a href="">プライバシーポリシー</a>
         </li>
         <li class="p-footer__nav-list">
-          サイトマップ
+          <a href="">サイトマップ</a>
         </li>
       </ul>
       <div class="p-footer__links">
@@ -501,17 +501,5 @@
     </div>
     
   </footer>
-
-  <div class="l-inner">
-
-
-    <h2 class="c-section-title">
-      主な取り扱い分野
-    </h2>
-
-    <a href="#" class="c-btn">主な取り扱い分野を詳しく見る</a>
-
-    <a href="#" class="c-btn-arrow">詳しくはこちら</a>
-  </div>
 </body>
 </html>

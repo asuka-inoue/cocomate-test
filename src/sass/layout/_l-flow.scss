@@ -4,7 +4,19 @@
   padding-top: rem(40);
   padding-bottom: rem(60);
   @include mq(md) {
-    padding-top: rem(99);
+    padding-top: rem(102);
     padding-bottom: rem(100);
+  }
+}
+
+.l-flow__inner {
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    max-width: rem(1144);
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
   }
 }

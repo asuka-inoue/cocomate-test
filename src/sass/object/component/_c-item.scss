@@ -7,12 +7,12 @@
   padding: rem(30) rem(25);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   max-width: rem(365);
   margin: auto;
   @include mq(md) {
-    padding: rem(33) rem(39) rem(44);
+    padding: rem(35) rem(39) rem(41);
     margin: 0;
     max-width: calc((100% - #{rem(25)} * 2) / 3);
   }
@@ -28,12 +28,12 @@
 
 .c-item:nth-child(2) .c-item__img {
   max-width: rem(116);
-  margin-top: rem(20);
+  margin-top: rem(26);
 }
 
 .c-item:nth-child(3) .c-item__img {
   max-width: rem(100);
-  margin-top: rem(20);
+  margin-top: rem(30);
 }
 
 .c-item__text-box {
@@ -50,7 +50,10 @@
 }
 
 .c-item__text {
-  font-size: rem(12);
+  font-size: rem(14);
   line-height: calc(22 / 12);
   margin-top: rem(10);
+  @include mq(md) {
+    font-size: rem(12);
+  }
 }

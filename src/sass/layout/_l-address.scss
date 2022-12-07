@@ -4,3 +4,16 @@
   padding-top: rem(41);
   padding-bottom: rem(67);
 }
+
+.l-address__inner {
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: rem(530);
+  @include mq(md) {
+    max-width: rem(1036);
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}

@@ -1,0 +1,88 @@
+@use "global" as *;
+
+.p-worry__body {
+  @include mq(md) {
+    max-width: rem(1038);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    left: rem(21);
+  }
+}
+.p-worry__wrapper {
+  @include mq(md) {
+    background: linear-gradient(90deg, #EFEFEF 0%, #EFEFEF 50%, transparent 50%, transparent 100%);
+  }
+}
+.p-worry__img {
+  position: relative;
+  max-width: rem(454);
+  width: 100%;
+  margin-right: calc(50% - 50vw);
+  margin-left: auto;
+  @include mq(md) {
+    max-width: rem(492);
+    padding: rem(44) 0 rem(43);
+    background: linear-gradient(90deg, #EFEFEF 0%, #EFEFEF 15%, transparent 15%, transparent 100%);
+    margin: 0;
+  }
+}
+.p-worry__img::before{
+  content: "";
+  display: block;
+  padding-top: 71.3414634%;
+}
+.p-worry__img img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  object-fit: cover;
+}
+.p-worry__content {
+  background: #EFEFEF;
+  padding: rem(23) $padding-sp $padding-sp;
+  position: relative;
+  width: 100%;
+  max-width: rem(500);
+  margin-left: calc(50% - 50vw);
+  top: -2.5rem;
+  @include mq(md) {
+    max-width: rem(546);
+    padding: rem(110) rem(69) rem(110) 0;
+    margin: 0;
+    top: 0;
+  }
+}
+
+.p-worry__title {
+  color: black;
+  font-size: rem(20);
+  font-family: $font-bold;
+  text-align: center;
+  margin-left: rem(17);
+  @include mq(md) {
+    font-size: rem(33);
+    line-height: calc(43 / 33);
+    text-align: left;
+    margin-left: initial;
+  }
+}
+
+.p-worry__text-block {
+  margin-top: rem(22);
+}
+
+.p-worry__text {
+  color: black;
+  font-size: rem(16);
+  line-height: calc(22 / 16);
+}
+
+.p-worry__text + .p-worry__text {
+  margin-top: 1.3em;
+}
+

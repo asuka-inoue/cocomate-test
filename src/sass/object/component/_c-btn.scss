@@ -14,22 +14,52 @@
 }
 
 .c-btn:hover {
-  background: $white;
-  color: #ED6417;
-  opacity: 1;
+  @include mq(md) {
+    background: $white;
+    color: #ED6417;
+    opacity: 1;
+  }
 }
 
 .c-btn--green {
   background: $green;
-  min-width: rem(164);
+  min-width: rem(250);
   border: 2px solid $green;
   font-size: rem(14);
   font-family: $font-sub;
   padding: rem(8) rem(46);
+  @include mq(md) {
+    min-width: rem(164);
+  }
 }
 
 .c-btn--green:hover {
+  @include mq(md) {
+    background: $white;
+    color: $green;
+    opacity: 1;
+  }
+}
+
+.c-btn--border {
   background: $white;
-  color: $green;
-  opacity: 1;
+  border: 1px solid $black;
+  color: black;
+  line-height: 2;
+  font-size: rem(14);
+  border-radius: 0;
+  padding: rem(7) rem(45) rem(6);
+  min-width: rem(300);
+  @include mq(md) {
+    font-size: rem(12);
+    min-width: rem(150);
+  }
+}
+
+.c-btn--border:hover {
+  @include mq(md) {
+    background: $black;
+    color: $white;
+    opacity: 1;
+  }
 }

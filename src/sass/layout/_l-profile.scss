@@ -3,7 +3,20 @@
 .l-profile {
   padding-top: rem(40);
   @include mq(md) {
-    padding-top: rem(58);
+    padding-top: rem(61);
     padding-bottom: rem(96);
   }
+}
+
+.l-profile__inner {
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    max-width: rem(1139);
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+  
 }

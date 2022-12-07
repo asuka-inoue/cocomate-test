@@ -1,0 +1,34 @@
+@use "global" as *;
+
+.c-page-title {
+  padding-top: rem(75);
+  padding-bottom: rem(75);
+}
+
+.c-page-title--service {
+  background: url(../images/service-title-mv.jpg) no-repeat 60% center / cover;
+}
+
+.c-page-title__text {
+  background: $green;
+  color: $white;
+  font-family: $font-bold;
+  font-size: rem(22);
+  text-align: center;
+  border-radius: rem(5);
+  max-width: rem(250);
+  width: 100%;
+  margin: auto;
+  padding: rem(12) 0;
+  @include mq(md) {
+    max-width: rem(350);
+  }
+}
+
+.c-page-title__text::after {
+  content: attr(data-en);
+  color: #4CA49D;
+  font-size: rem(14);
+  display: block;
+  margin-top: rem(-1);
+}

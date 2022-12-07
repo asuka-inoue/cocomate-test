@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.c-news {
+  font-family: $font-sub;
+  display: flex;
+}
+
+.c-news + .c-news {
+  margin-top: rem(10);
+}
+
+.c-news__date {
+  font-weight: 700;
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+}
+
+.c-news__title {
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+  margin-left: rem(24);
+}

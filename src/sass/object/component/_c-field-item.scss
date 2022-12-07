@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.c-field-item {
+  width: 100%;
+  max-width: rem(500);
+  background: $green;
+  color: $white;
+  border-radius: rem(5);
+  padding: rem(30) rem(15);
+  margin: auto;
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(19) rem(24) rem(24) rem(43);
+    min-height: rem(200);
+    max-width: rem(705);
+  }
+}
+
+.c-field-item + .c-field-item {
+  margin-top: rem(30);
+}
+
+
+.c-field-item:nth-child(2) {
+  background: #60853B;
+}
+
+.c-field-item:nth-child(3) {
+  background: #245A78;
+}
+
+.c-field-item__img {
+  width: 100%;
+  max-width: rem(107);
+  margin-left: auto;
+  margin-right: auto;
+  @include mq(md){
+    margin-top: rem(8);
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.c-field-item__textblock {
+  width: 100%;
+  margin-top: rem(20);
+  @include mq(md) {
+    width: 82%;
+    max-width: rem(327);
+    margin-left: rem(36);
+    margin-top: 0;
+  }
+}
+
+.c-field-item__title {
+  font-size: rem(24);
+  line-height: calc(48 / 24);
+  font-family: $font-bold;
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+  }
+}
+
+.c-field-item__text {
+  font-size: rem(14);
+  line-height: calc(22 / 12);
+  margin-top: rem(-1);
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.c-field-item__btn {
+  text-align: center;
+  margin-top: rem(30);
+  @include mq(md) {
+    text-align: right;
+    margin-top: rem(8);
+    width: 43%;
+    min-width: rem(141);
+  }
+}

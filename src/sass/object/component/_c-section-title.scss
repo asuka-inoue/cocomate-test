@@ -4,7 +4,7 @@
   display: inline-block;
   font-family: $font-bold;
   font-size: rem(23);
-  line-height: 2;
+  line-height: 1.8;
   border-bottom: 2px solid $orange;
   @include mq(md) {
     font-size: rem(27);
@@ -26,5 +26,13 @@
   line-height: 1.5;
   @include mq(md) {
     font-size: rem(24);
+  }
+}
+
+.c-section-title--big {
+  font-size: rem(25);
+  line-height: 1.5;
+  @include mq(md) {
+    font-size: rem(33);
   }
 }

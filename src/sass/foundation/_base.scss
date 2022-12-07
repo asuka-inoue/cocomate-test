@@ -28,6 +28,10 @@ html {
 body {
   font-family: $font-main;
   color: $black;
+  padding-top: rem(76);
+  @include mq(md) {
+    padding-top: rem(106);
+  }
 }
 
 // ホバー
@@ -40,4 +44,14 @@ button {
       cursor: pointer;
     }
   }
+}
+
+html {
+  visibility: hidden;
+  height: 100%;
+}
+
+html.wf-active,
+html.loading-delay {
+  visibility: visible;
 }

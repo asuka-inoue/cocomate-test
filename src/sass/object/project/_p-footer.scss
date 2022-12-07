@@ -14,14 +14,45 @@
 .p-footer__title span {
   font-family: $font-sub;
   font-size: rem(16);
+  display: block;
+  margin-left: rem(16);
 }
 
 .p-footer__nav {
   width: 100%;
   margin: auto;
+  text-align: center;
+  margin-top: rem(19);
   @include mq(md) {
     display: flex;
-    max-width: rem(496);
-
+    justify-content: center;
+    column-gap: rem(25);
   }
+}
+
+.p-footer__nav-list {
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.p-footer__nav-list + .p-footer__nav-list {
+  margin-top: rem(13);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.p-footer__links {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(34);
+}
+
+.p-footer__link {
+  display: inline-block;
+}
+.p-footer__link + .p-footer__link {
+  margin-left: rem(11);
 }

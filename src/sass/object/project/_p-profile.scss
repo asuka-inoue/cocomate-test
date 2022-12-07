@@ -7,10 +7,12 @@
 .p-profile__wrapper {
   width: 100%;
   @include mq(md) {
-    max-width: rem(1036);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    // margin-left: rem(43);
     position: relative;
-    margin-left: auto;
-    margin-right: rem(37);
+    left: rem(43);
   }
 }
 
@@ -51,9 +53,10 @@
   padding: rem(30) rem(20);
   @include mq(md) {
     margin: 0;
-    position: absolute;
+    // position: absolute;
     top: rem(61);
-    right: 0;
+    // right: 0;
+    left: rem(-53);
     padding: rem(36) rem(72) rem(35);
   }
 }
@@ -62,6 +65,10 @@
   font-size: rem(24);
   font-family: $font-bold;
   line-height: calc(48 / 24);
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+  }
 }
 
 .p-profile__text {
@@ -72,4 +79,8 @@
 
 .p-profile__btn {
   margin-top: rem(32);
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+  }
 }

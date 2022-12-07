@@ -6,3 +6,16 @@
     padding-top: rem(201);
   }
 }
+
+.l-features__inner {
+  max-width: rem(380);
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq(md) {
+    max-width: rem(1110);
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}

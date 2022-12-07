@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-breadcrumbs {
+  padding: rem(15) 0;
+  @include mq(md) {
+    padding: rem(26) 0 rem(28);
+  }
+}
+

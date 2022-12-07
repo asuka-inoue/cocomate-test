@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.c-header{
+.p-header{
   position: fixed;
   top: 0;
   left: 0;
@@ -9,12 +9,13 @@
   background: $white;
   z-index: 10;
   transition: all .3s;
+  border-bottom: 1px solid #ddd;
   @include mq(md) {
-    padding: rem(15) 0 rem(19);
+    padding: rem(15) 0 rem(18);
   }
 }
 
-.c-header__inner {
+.p-header__inner {
   width: 100%;
   height: inherit;
   margin: 0 auto;
@@ -26,11 +27,11 @@
     padding: 0 rem(29) 0 rem(28);
   }
 }
-.c-header__title{
+.p-header__title{
   position: relative;
   z-index: 20;
 }
-.c-header__logo {
+.p-header__logo {
   display: inline-block;
   color: $green;
   font-size: rem(20);
@@ -39,7 +40,7 @@
     font-size: rem(32);
   }
 }
-.c-header__logo span {
+.p-header__logo span {
   font-size: rem(14);
   font-family: $font-sub;
   margin-left: rem(10);
@@ -47,31 +48,31 @@
     font-size: rem(16);
   }
 }
-.c-header__nav{
+.p-header__nav{
   display: none;
   @include mq(md){
     display: block;
     height: inherit;
   }
 }
-.c-header__lists{
+.p-header__lists{
   display: flex;
   align-items: center;
   height: inherit;
 }
 
-.c-header__link{
+.p-header__link{
   position: relative;
   font-size: rem(14);
-  font-family: $font-sub;
   font-weight: 500;
+  font-family: $font-sub;
   padding: rem(9) rem(19) rem(20);
 }
-.c-header__list:nth-of-type(1) .c-header__link {
+.p-header__list:nth-of-type(1) .p-header__link {
   padding-left: rem(2);
 }
 
-.c-header__contact {
+.p-header__contact {
   display: none;
   @include mq(md) {
     display: flex;
@@ -82,20 +83,20 @@
   }
 }
 
-.c-header__tel {
+.p-header__tel {
   font-size: rem(29);
   font-family: $font-tel;
   font-weight: 500;
   white-space: nowrap;
 }
 
-.c-header__tel a {
+.p-header__tel a {
   display: flex;
   align-items: center;
   line-height: 1;
   letter-spacing: .05em;
 }
-.c-header__tel a::before {
+.p-header__tel a::before {
   content: "";
   display: inline-block;
   background: url(../images/icon-tel.svg) no-repeat center / contain;
@@ -104,32 +105,37 @@
   margin-right: rem(5);
 }
 
-.c-header__tel span {
+.p-header__tel span {
   display: block;
   font-size: rem(11);
   font-family: $font-sub;
   font-weight: 400;
   margin-left: rem(16);
-  margin-top: rem(4);
+  margin-top: rem(3);
   letter-spacing: .12em;
 }
 
-.c-header__contact-btn {
-  color: $white;
-  width: 88%;
+.p-header__contact-btn {
+  width: 100%;
   max-width: rem(200);
-  font-size: rem(14);
-  font-family: $font-sub;
-  background: $green;
-  border-radius: rem(5);
+  margin-left: rem(29);
+}
+
+.p-header__contact-btn a {
   padding: rem(14) rem(5);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: rem(29);
+  color: $white;
+  font-size: rem(14);
+  font-family: $font-sub;
+  font-weight: 500;
+  background: $green;
+  border-radius: rem(5);
 }
 
-.c-header__contact-btn::before {
+
+.p-header__contact-btn a::before {
   content: "";
   display: block;
   background: url(../images/icon-mail.svg) no-repeat center / contain;
@@ -138,7 +144,7 @@
   margin-right: rem(11);
 }
 
-.c-header__btn {
+.p-header__btn {
   position: relative;
   width: rem(26);
   height: rem(16);
@@ -147,7 +153,7 @@
     display: none;
   }
 }
-.c-header__btn span{
+.p-header__btn span{
   display: block;
   width: 100%;
   height: rem(2);
@@ -156,34 +162,34 @@
   position: absolute;
   transition: transform .5s, opacity .5s;
 }
-.c-header__btn span:nth-child(1) {
+.p-header__btn span:nth-child(1) {
   top: 0;
 }
-.c-header__btn span:nth-child(2){
+.p-header__btn span:nth-child(2){
   top: 0;
   bottom: 0;
   margin: auto;
   }
-.c-header__btn span:nth-child(3) {
+.p-header__btn span:nth-child(3) {
   bottom: 0;
   }
 
 //タップ後のハンバーガー
-.c-header__btn.is-active {
+.p-header__btn.is-active {
   width: rem(23);
 }
-.c-header__btn.is-active span:nth-child(1) { 
+.p-header__btn.is-active span:nth-child(1) { 
   transform: translateY(rem(7)) rotate(-45deg);
   }
-.c-header__btn.is-active span:nth-child(2) {
+.p-header__btn.is-active span:nth-child(2) {
   opacity: 0;
   }
-.c-header__btn.is-active span:nth-child(3) {
+.p-header__btn.is-active span:nth-child(3) {
   transform: translateY(rem(-7)) rotate(45deg);
   }
 
 //スライドメニュー
-.c-header__spnav {
+.p-header__spnav {
   display: block;
   position: fixed;
   z-index: 10;
@@ -200,22 +206,22 @@
     display: none;
   }
 }
-.c-header__splists {
+.p-header__splists {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   margin-top: rem(130);
 }
-.c-header__splist {
+.p-header__splist {
   list-style: none;
   text-align: center;
   padding-left: rem(4);
 }
-.c-header__splist + .c-header__splist {
+.p-header__splist + .p-header__splist {
   padding-top: rem(31);
 }
-.c-header__splink {
+.p-header__splink {
   font-size: rem(16);
   font-family: $font-sub;
   font-weight: 500;
@@ -224,10 +230,10 @@
   color: $black;
 }
 //activeクラスをつけたら、スライドイン
-.c-header__spnav.is-active {
+.p-header__spnav.is-active {
   transform: translateX(0);
 }
-.c-header__spcontact {
+.p-header__spcontact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -235,7 +241,7 @@
   margin-top: rem(40);
 }
 
-.c-header__contact-btn--sp {
+.p-header__contact-btn--sp {
   margin-left: 0;
   margin-top: rem(20);
 }

@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.p-rate__title {
+  text-align: center;
+}
+
+.p-rate__text-wrapper {
+  margin-top: rem(30);
+  width: 100%;
+  @include mq(md) {
+    margin-top: rem(73);
+  }
+}
+
+.p-rate__text {
+  font-size: rem(16);
+  line-height: calc(28 / 16);
+}
+
+.p-rate__text + .p-rate__text {
+  margin-top: 1.8em;
+}

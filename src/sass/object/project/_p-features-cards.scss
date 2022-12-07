@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.p-features-cards {
+  width: 100%; 
+  @include mq(md) {
+    display: flex;
+  }
+}
+

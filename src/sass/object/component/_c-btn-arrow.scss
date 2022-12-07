@@ -7,13 +7,17 @@
   border-radius: rem(18);
   background: $white;
   color: $black;
-  min-width: rem(141);
-  font-size: rem(12);
+  min-width: rem(250);
+  font-size: rem(14);
   font-family: $font-bold;
   letter-spacing: .01em;
   line-height: calc(24/12);
   padding: rem(6) rem(37) rem(5) rem(19);
   transition: .3s;
+  @include mq(md) {
+    min-width: rem(141);
+    font-size: rem(12);
+  }
 }
 
 .c-btn-arrow::after {
@@ -31,9 +35,13 @@
 }
 
 .c-btn-arrow:hover {
-  opacity: 1;
+  @include mq(md) {
+    opacity: 1;
+  }
 }
 
 .c-btn-arrow:hover::after {
-  right: rem(5);
+  @include mq(md) {
+    right: rem(5);
+  }
 }

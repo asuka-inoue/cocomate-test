@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.p-page-field__title {
+  text-align: center;
+}
+
+.p-page-field__items {
+  margin-top: rem(60);
+  @include mq(md) {
+    margin-top: rem(88);
+  }
+}
+
+.p-page-field__other-items {
+  margin-top: rem(75);
+  max-width: rem(1107);
+  margin-left: auto;
+  margin-right: auto;
+}
